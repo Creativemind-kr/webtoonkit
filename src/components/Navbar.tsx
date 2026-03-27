@@ -29,8 +29,19 @@ export default function Navbar() {
     <nav className="border-b border-gray-800 bg-gray-950/95 backdrop-blur sticky top-0 z-50">
       {/* 상단 바 */}
       <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
-        <Link href="/" className="text-lg font-bold text-white tracking-tight">
-          웹툰키트
+        <Link href="/" className="flex items-center gap-2">
+          <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            {/* 연필 몸통 */}
+            <rect x="58" y="10" width="14" height="55" rx="3" transform="rotate(15 58 10)" fill="white" />
+            {/* 연필 끝 (지우개) */}
+            <rect x="60" y="8" width="14" height="10" rx="2" transform="rotate(15 60 8)" fill="#a5b4fc" />
+            {/* 연필 심 */}
+            <polygon points="52,72 66,68 59,82" fill="#6b7280" />
+            <polygon points="59,82 53,84 52,72" fill="#374151" />
+            {/* 곡선 획 */}
+            <path d="M10 85 Q25 60 40 75 Q55 90 70 65" stroke="white" strokeWidth="4" strokeLinecap="round" fill="none" />
+          </svg>
+          <span className="text-lg font-bold text-white tracking-tight">웹툰키트</span>
         </Link>
 
         {/* 검색창 */}
