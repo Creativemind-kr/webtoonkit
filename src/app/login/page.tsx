@@ -127,7 +127,6 @@ export default function LoginPage() {
               <p className="text-xs text-gray-400 font-medium mb-3">파트너 혜택</p>
               <div className="space-y-2">
                 {[
-                  "판매액의 최대 80% 수익",
                   "월 1회 정산 지급",
                   "전용 대시보드 제공",
                   "프로모션 참여 가능",
